@@ -1,16 +1,24 @@
 package com.fvncional.developer.emmersonprova.Models;
 
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "nota")
 public class Nota {
     @PrimaryKey(autoGenerate = true)
     private int id;
-
-    private Aluno aluno;
-    private Disciplina disciplina;
     private float media, nota1, nota2, nota3,nota4;
+    @ForeignKey(
+            entity = Aluno.class,
+            parentColumns = "matricula",
+            childColumns = "matAluno")
+    private String matAluno;
+    @ForeignKey(
+            entity = Disciplina.class,
+            parentColumns = "id",
+            childColumns = "disciplinaId")
+    private int disciplinaId;
 
     public Nota() {
     }
@@ -23,20 +31,20 @@ public class Nota {
         this.id = id;
     }
 
-    public Aluno getAluno() {
-        return aluno;
+    public String getMatAluno() {
+        return matAluno;
     }
 
-    public void setAluno(Aluno aluno) {
-        this.aluno = aluno;
+    public void setMatAluno(String matAluno) {
+        this.matAluno = matAluno;
     }
 
-    public Disciplina getDisciplina() {
-        return disciplina;
+    public int getDisciplinaId() {
+        return disciplinaId;
     }
 
-    public void setDisciplina(Disciplina disciplina) {
-        this.disciplina = disciplina;
+    public void setDisciplinaId(int disciplinaId) {
+        this.disciplinaId = disciplinaId;
     }
 
     public float getMedia() {

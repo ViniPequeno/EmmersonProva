@@ -1,14 +1,23 @@
 package com.fvncional.developer.emmersonprova;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
+import com.fvncional.developer.emmersonprova.Controller.NotaController;
+import com.fvncional.developer.emmersonprova.DAO.NotaDAO;
+import com.fvncional.developer.emmersonprova.Models.Nota;
+
+import java.util.List;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 public class ProfessorActivity extends AppCompatActivity {
     TextView lblTurma, lblDisciplina;
+    Button btnAddAluno;
     TableLayout table;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +27,10 @@ public class ProfessorActivity extends AppCompatActivity {
         lblTurma = findViewById(R.id.lblTurma);
         lblDisciplina = findViewById(R.id.lblDisciplina);
         table = findViewById(R.id.table);
+        btnAddAluno = findViewById(R.id.btnAddAluno);
+
+        NotaController nc = new NotaController(this);
+        List<Nota> notas = nc.listAluno(0);
 
         for (int i=0;i<5;i++){
             View tableRow = LayoutInflater.from(this).inflate(R.layout.prof_row,null,false);

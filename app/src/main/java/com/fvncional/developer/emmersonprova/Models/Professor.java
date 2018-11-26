@@ -1,6 +1,7 @@
 package com.fvncional.developer.emmersonprova.Models;
 
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "professor")
@@ -8,9 +9,14 @@ public class Professor {
     @PrimaryKey(autoGenerate = true)
     private int id;
     private String nome;
-    private Disciplina disciplina;
     private String turma;
     private String senha;
+
+    @ForeignKey(
+            entity = Disciplina.class,
+            parentColumns = "id",
+            childColumns = "disciplinaId")
+    private int disciplinaId;
 
     public Professor(){
 
@@ -35,13 +41,9 @@ public class Professor {
         this.nome = nome;
     }
 
-    public Disciplina getDisciplina() {
-        return disciplina;
-    }
+    public int getDisciplinaId() { return disciplinaId; }
 
-    public void setDisciplina(Disciplina disciplina) {
-        this.disciplina = disciplina;
-    }
+    public void setDisciplinaId(int disciplina) { this.disciplinaId = disciplina; }
 
     public String getTurma() {
         return turma;

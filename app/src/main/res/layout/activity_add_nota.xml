@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddAlunoActivity">
+
+    <EditText android:id="@+id/txtAluno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Aluno" />
+    <EditText android:id="@+id/txtN1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 1" />
+    <EditText android:id="@+id/txtN2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 2" />
+    <EditText android:id="@+id/txtN3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 3" />
+    <EditText android:id="@+id/txtN4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 4" />
+    <EditText android:id="@+id/txtMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Média" />
+    <EditText android:id="@+id/txtDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Disciplina" />
+    <Button android:id="@+id/btnConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar" android:onClick="cadastrar"/>
+</LinearLayout>

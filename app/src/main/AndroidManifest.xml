@@ -16,9 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProfessorActivity"
-            android:label="Professor"/>
-        <activity android:name=".AlunoActivity"
-            android:label="Aluno"/>
+        <activity
+            android:name=".ProfessorActivity"
+            android:label="Professor" />
+        <activity
+            android:name=".AlunoActivity"
+            android:label="Aluno" />
+        <activity android:name=".AddAlunoActivity"
+            android:label="Cadastrar Aluno"></activity>
+        <activity android:name=".AddDisciplinaActivity"
+            android:label="Cadastrar Disciplina"/>
+        <activity android:name=".AddNotaActivity"
+            android:label="Cadastrar Nota"/>
+        <activity android:name=".AddProfessorActivity"
+            android:label="Cadastrar Professor"/>
     </application>
+
 </manifest>

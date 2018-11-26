@@ -2,18 +2,18 @@ package com.fvncional.developer.emmersonprova.Models;
 
 import java.util.List;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "aluno")
 public class Aluno {
-    @PrimaryKey()
+    @PrimaryKey
+    @NonNull
     private String matricula;
 
     private String nome;
     private String turma;
-
-    private List<Nota> notaList;
 
     public Aluno(){
 
@@ -42,11 +42,4 @@ public class Aluno {
         this.turma = turma;
     }
 
-    public List<Nota> getNotaList() {
-        return notaList;
-    }
-
-    public void setNotaList(List<Nota> notaList) {
-        this.notaList = notaList;
-    }
 }

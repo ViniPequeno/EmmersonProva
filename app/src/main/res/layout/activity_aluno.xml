@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlunoActivity">
+    android:layout_width="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AlunoActivity">
 
-</android.support.constraint.ConstraintLayout>
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblDisciplina">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Disciplina"
+                    android:layout_weight="0.5"/>
+                <TextView android:text="N1"
+                    android:layout_weight="0.5"/>
+                <TextView android:text="N2"
+                    android:layout_weight="0.5"/>
+                <TextView android:text="N3"
+                    android:layout_weight="0.5"/>
+                <TextView android:text="N4"
+                    android:layout_weight="0.5"/>
+                <TextView android:text="M"
+                    android:layout_weight="0.5"/>
+            </TableRow>
+        </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
