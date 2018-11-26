@@ -11,38 +11,34 @@
         android:id="@+id/txtNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome"
-        android:matricula="@+matricula/txtNome" />
+        android:hint="Nome"/>
 
     <EditText
         android:id="@+id/txtTurma"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Turma"
-        android:matricula="@+matricula/txtTurma" />
+        android:hint="Turma" />
 
     <EditText
         android:id="@+id/txtMatricula"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Matricula"
-        android:matricula="@+matricula/txtTurma" />
+        android:hint="Matricula" />
 
     <EditText
         android:id="@+id/txtLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Login"
-        android:matricula="@+matricula/txtTurma" />
+        android:hint="Login" />
 
     <EditText
         android:id="@+id/txtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
-        android:inputType="textPassword"
-        android:matricula="@+matricula/txtSenha" />
-    <Button android:matricula="@+matricula/btnConfirmar"
+        android:inputType="textPassword" />
+
+    <Button android:id="@+id/btnConfirmar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Confirmar" android:onClick="cadastrar"/>

@@ -7,19 +7,19 @@
     android:orientation="vertical"
     tools:context=".AddAlunoActivity">
 
-    <EditText android:matricula="@+matricula/txtMatricula"
+    <EditText android:id="@+id/txtMatricula"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Matrícula" />
-    <EditText android:matricula="@+matricula/txtNome"
+    <EditText android:id="@+id/txtNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nome" />
-    <EditText android:matricula="@+matricula/txtTurma"
+    <EditText android:id="@+id/txtTurma"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Turma" />
-    <Button android:matricula="@+matricula/btnConfirmar"
+    <Button android:id="@+id/btnConfirmar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Confirmar" android:onClick="cadastrar"/>
