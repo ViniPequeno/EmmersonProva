@@ -18,6 +18,8 @@ public class AlunoController {
         db = Room.databaseBuilder(context, AppDatabase.class, "Banco").allowMainThreadQueries().build() ;
     }
 
+    public Aluno getAluno(String a){return db.alunoDAO().getAluno(a);}
+
     public void inserir(Aluno aluno) {
         db.alunoDAO().insertAll(aluno);
     }

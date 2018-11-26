@@ -11,10 +11,35 @@
         android:layout_height="match_parent"
         tools:context=".ProfessorActivity">
 
-        <Button android:id="@+id/btnAddAluno"
+        <Button
+            android:id="@+id/btnAddAluno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add Aluno"/>
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Add Aluno"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnAddNota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Add Nota"
+            app:layout_constraintStart_toEndOf="@+id/btnAddAluno"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnAddDisciplina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Add Disciplina"
+            app:layout_constraintStart_toEndOf="@+id/btnAddNota"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/lblTurma"

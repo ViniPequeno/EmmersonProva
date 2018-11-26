@@ -30,7 +30,6 @@
         android:ems="10"
         android:hint="Matrícula"
         android:inputType="textPersonName|number"
-        android:lblDisciplina="@+matricula/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
