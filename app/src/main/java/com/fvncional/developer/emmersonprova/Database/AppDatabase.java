@@ -3,7 +3,7 @@ package com.fvncional.developer.emmersonprova.Database;
 import com.fvncional.developer.emmersonprova.DAO.AlunoDAO;
 import com.fvncional.developer.emmersonprova.DAO.DisciplinaDAO;
 import com.fvncional.developer.emmersonprova.DAO.NotaDAO;
-import com.fvncional.developer.emmersonprova.DAO.Professor;
+import com.fvncional.developer.emmersonprova.Models.Professor;
 import com.fvncional.developer.emmersonprova.Models.Aluno;
 import com.fvncional.developer.emmersonprova.Models.Disciplina;
 import com.fvncional.developer.emmersonprova.Models.Nota;
