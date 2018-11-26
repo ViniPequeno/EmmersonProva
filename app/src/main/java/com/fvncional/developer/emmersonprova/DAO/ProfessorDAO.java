@@ -15,8 +15,11 @@ public interface ProfessorDAO {
     @Query("SELECT * FROM professor")
     List<Professor> listProfessor();
 
-    @Query("SELECT * FROM professor WHERE id = :id")
-    Professor getAluno(int id);
+    @Query("SELECT * FROM professor WHERE matricula = :matricula")
+    Professor getById(int matricula);
+
+    @Query("SELECT * FROM professor WHERE login = :login AND senha = :senha")
+    Professor login(String login, String senha);
 
     @Insert
     void insertAll(Professor... professors);

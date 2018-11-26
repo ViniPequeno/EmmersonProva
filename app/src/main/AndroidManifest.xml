@@ -22,14 +22,24 @@
         <activity
             android:name=".AlunoActivity"
             android:label="Aluno" />
-        <activity android:name=".AddAlunoActivity"
-            android:label="Cadastrar Aluno"></activity>
-        <activity android:name=".AddDisciplinaActivity"
-            android:label="Cadastrar Disciplina"/>
-        <activity android:name=".AddNotaActivity"
-            android:label="Cadastrar Nota"/>
-        <activity android:name=".AddProfessorActivity"
-            android:label="Cadastrar Professor"/>
+        <activity
+            android:name=".AddAlunoActivity"
+            android:label="Cadastrar Aluno" />
+        <activity
+            android:name=".AddDisciplinaActivity"
+            android:label="Cadastrar Disciplina" />
+        <activity
+            android:name=".AddNotaActivity"
+            android:label="Cadastrar Nota" />
+        <activity
+            android:name=".AddProfessorActivity"
+            android:label="Cadastrar Professor" />
+        <activity
+            android:name=".RelatorioActivity"
+            android:label="Relatório" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
     </application>
 
 </manifest>

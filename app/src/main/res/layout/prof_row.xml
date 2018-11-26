@@ -7,42 +7,42 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/lblNome"
+        android:matricula="@+matricula/lblNome"
         android:layout_weight="0.5"
         android:gravity="center"/>
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:id="@+id/lblN1"
+        android:matricula="@+matricula/lblN1"
         android:layout_weight="0.5"
         android:gravity="center"/>
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:id="@+id/lblN2"
+        android:matricula="@+matricula/lblN2"
         android:layout_weight="0.5"
         android:gravity="center"/>
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:id="@+id/lblN3"
+        android:matricula="@+matricula/lblN3"
         android:layout_weight="0.5"
         android:gravity="center"/>
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:id="@+id/lblN4"
+        android:matricula="@+matricula/lblN4"
         android:layout_weight="0.5"
         android:gravity="center"/>
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:id="@+id/lblMedia"
+        android:matricula="@+matricula/lblMedia"
         android:layout_weight="0.5"
         android:gravity="center"/>
 </TableRow>

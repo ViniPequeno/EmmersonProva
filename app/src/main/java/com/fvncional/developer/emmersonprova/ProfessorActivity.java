@@ -32,7 +32,7 @@ public class ProfessorActivity extends AppCompatActivity {
         NotaController nc = new NotaController(this);
         List<Nota> notas = nc.listAluno(0);
 
-        for (int i=0;i<5;i++){
+        for (Nota nota : notas){
             View tableRow = LayoutInflater.from(this).inflate(R.layout.prof_row,null,false);
             TextView lblNome  = (TextView) tableRow.findViewById(R.id.lblNome);
             TextView lblN1  = (TextView) tableRow.findViewById(R.id.lblN1);
@@ -41,12 +41,12 @@ public class ProfessorActivity extends AppCompatActivity {
             TextView lblN4  = (TextView) tableRow.findViewById(R.id.lblN4);
             TextView lblMedia  = (TextView) tableRow.findViewById(R.id.lblMedia);
 
-            lblNome.setText(""+(i+1));
+            lblNome.setText("123");
             lblN1.setText("2014-02-05");
             lblN2.setText("2014-02-05");
             lblN3.setText("2014-02-05");
             lblN4.setText("2014-02-05");
-            lblMedia.setText(""+(20+(i+1)));
+            lblMedia.setText("456");
             table.addView(tableRow);
         }
     }

@@ -9,11 +9,13 @@ public class Nota {
     @PrimaryKey(autoGenerate = true)
     private int id;
     private float media, nota1, nota2, nota3,nota4;
+
     @ForeignKey(
             entity = Aluno.class,
             parentColumns = "matricula",
             childColumns = "matAluno")
     private String matAluno;
+
     @ForeignKey(
             entity = Disciplina.class,
             parentColumns = "id",

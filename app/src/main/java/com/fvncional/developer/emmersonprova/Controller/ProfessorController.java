@@ -30,6 +30,10 @@ public class ProfessorController {
         db.professorDAO().delete(professor);
     }
 
+    public Professor login(String login, String senha) {
+        return db.professorDAO().login(login,senha);
+    }
+
     public List<Professor> listarTodos() {
         return db.professorDAO().listProfessor();
     }

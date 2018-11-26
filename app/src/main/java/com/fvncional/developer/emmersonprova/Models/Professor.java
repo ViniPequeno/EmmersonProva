@@ -8,7 +8,9 @@ import androidx.room.PrimaryKey;
 public class Professor {
     @PrimaryKey(autoGenerate = true)
     private int id;
+    private int matricula;
     private String nome;
+    private String login;
     private String turma;
     private String senha;
 
@@ -21,16 +23,21 @@ public class Professor {
     public Professor(){
 
     }
-    public Professor(int id) {
-        this.id = id;
+
+    public int getId() { return id; }
+
+    public void setId(int id) { this.id = id; }
+
+    public Professor(int matricula) {
+        this.matricula = matricula;
     }
 
-    public int getId() {
-        return id;
+    public int getMatricula() {
+        return matricula;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
     }
 
     public String getNome() {
@@ -40,6 +47,10 @@ public class Professor {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public String getLogin() { return login; }
+
+    public void setLogin(String login) { this.login = login; }
 
     public int getDisciplinaId() { return disciplinaId; }
 

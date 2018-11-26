@@ -7,22 +7,42 @@
     android:orientation="vertical"
     tools:context=".AddAlunoActivity">
 
-    <EditText android:id="@+id/txtNome"
+    <EditText
+        android:id="@+id/txtNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome" />
-    <EditText android:id="@+id/txtTurma"
+        android:hint="Nome"
+        android:matricula="@+matricula/txtNome" />
+
+    <EditText
+        android:id="@+id/txtTurma"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Turma" />
+        android:hint="Turma"
+        android:matricula="@+matricula/txtTurma" />
+
+    <EditText
+        android:id="@+id/txtMatricula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Matricula"
+        android:matricula="@+matricula/txtTurma" />
+
+    <EditText
+        android:id="@+id/txtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Login"
+        android:matricula="@+matricula/txtTurma" />
 
     <EditText
         android:id="@+id/txtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
-        android:inputType="textPassword" />
-    <Button android:id="@+id/btnConfirmar"
+        android:inputType="textPassword"
+        android:matricula="@+matricula/txtSenha" />
+    <Button android:matricula="@+matricula/btnConfirmar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Confirmar" android:onClick="cadastrar"/>
